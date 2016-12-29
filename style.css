@@ -1,0 +1,35 @@
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+    margin:0 auto;
+    margin-top: 10em;
+    max-width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: #9575CD;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.title {
+    font-size: 2.8rem;
+}
+
+.support {
+    font-size: 2rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.support2 {
+    font-size: 1.5rem;
+}
+
+.code {
+    font-size: 1.5rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}

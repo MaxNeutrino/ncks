@@ -2,61 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <script src="jquery-3.1.1.min.js"></script>
+
+
     <link rel="stylesheet" href="style.css"/>
     <title>NatashaClubKissSender</title>
 </head>
 <body>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">Natasha Club Kiss Sender</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation. We hide it in small screens. -->
-        </div>
+<div class="header">
+    <header>
+        <h3>NatashaClub Kiss Sender</h3>
     </header>
-    <main class="mdl-layout__content">
-        <div class="page-content">
-
-            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text title">Countdown to realise v1.0</h2>
-                </div>
-                <div class="mdl-card__supporting-text center">
-
-                    <div id="countdown" class="support" style="margin: 0 auto"></div>
-
-                    <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-
-                    <div class="code">
-                        Rows of source code:
-                        <span>748</span>
-                    </div>
-
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <span class="mdl-chip">
-                        <span class="mdl-chip__text">Fast</span>
-                    </span>
-                    <span class="mdl-chip">
-                        <span class="mdl-chip__text">Easy</span>
-                    </span>
-                    <span class="mdl-chip">
-                        <span class="mdl-chip__text">Smart</span>
-                    </span>
-                </div>
-            </div>
-
-        </div>
-    </main>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col s6 m12 l6">
+            <div class="card" id="one">
+                <div class="card-content">
+                    <span class="card-title title contcen">Быстрая</span>
+                    <p><ul class="grey-text text-darken-1">
+                    <li>Несколько секунд и весь дневной максимум Kiss отправлен</li>
+                    <li>Рассылает сразу по нескольким анкетам</li>
+                </ul></p>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m12 l6">
+            <div class="card" id="two">
+                <div class="card-content">
+                    <span class="card-title title contcen">Умная</span>
+                    <p><ul class="grey-text text-darken-1">
+                    <li>Не отправляет одним и тем же мужчинам Kiss</li>
+                    <li>Не нужно каждый раз вводить логин и пароль</li>
+                    <li>Выбор онлайн статуса и региона</li>
+                </ul></p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l12">
+            <div class="card" id="three">
+                <div class="card-content contcen">
+                    <span class="card-title title">Осталось до релиза v1.0 </span>
+                    <p><h4 id="countdown" class="title"></h4></p>
+                    <div class="progress deep-purple lighten-3">
+                        <div class="determinate deep-purple darken-4" id="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="card-action button-right">
+                    <a class="waves-effect waves-light btn amber accent-4" href="#modal2">Что нового</a>
+                    <a class="waves-effect waves-light btn amber accent-4" href="#modal1">Ранний доступ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--<div class="element " id="first-left">
+        <div id="first-content" class="slider-content">
+            <h4>Быстрая</h4>
+                <ul>
+                    <li>Несколько секунд и весь дневной максимум Kiss отправлен</li>
+                    <li>Рассылает сразу по нескольким анкетам</li>
+                </ul>
+
+        </div>
+    </div>
+
+    <div class="element  element-shadow" id="second-right">
+        <div id="second-content" class="slider-content">
+            <h4>Умная</h4>
+                <ul>
+                    <li>Не отправляет каждый раз одним и тем же мужчинам Kiss</li>
+                    <li>Не нужно каждый раз вводить логин и пароль</li>
+                    <li>Выбор онлайн статуса и региона</li>
+                </ul>
+        </div>
+    </div>
+
+    <div id="up" class="main-el amber lighten-3">
+        <div class="up-content" id="up-fade-in">
+            <h4>Осталось до релиза v1.0 </h4>
+            <h4 id="countdown"></h4>
+            <div style="text-align: right; padding-right: 2em">
+                <a class="waves-effect waves-light btn deep-purple accent-4" href="#modal2">Что нового</a>
+                <a class="waves-effect waves-light btn deep-purple accent-4" href="#modal1">Ранний доступ</a>
+            </div>
+        </div>
+    </div>-->
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal bottom-sheet deep-purple darken-3">
+    <div class="modal-content altex">
+        <h4 class="white-text">Доступна v0.1.4-SNAPSHOT</h4>
+        <p class="grey-text text-lighten-4">Осторожно, может не правильно работать</p>
+    </div>
+    <div class="modal-footer  deep-purple darken-3">
+        <a href="https://drive.google.com/open?id=1FSGZvwcbY3-_Kx6sexNtg3y-6ZN7_b8brHgv32Zrv98" class=" modal-action modal-close waves-effect waves-light btn-flat grey-text text-lighten-4">Инструкции</a>
+        <a href="https://drive.google.com/open?id=0B4W161tfMM4NX3BhODhNVTlJVUU" class=" modal-action modal-close waves-effect waves-light btn-flat grey-text text-lighten-4">Скачать</a>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h4>Что будет в v1.0</h4>
+        <p>
+            <ul>
+        <li>Полностью изменена архитектура</li>
+        <li>Отправка по регионам</li>
+        <li>Быстрый вход на анкету</li>
+        <li>Исправление множества ошибок</li>
+        <li>Новый интерфейс</li>
+    </ul>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-purple btn-flat">Супер!</a>
+    </div>
+</div>
+
+<script src="animation.js"></script>
 <script src="main.js"></script>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 </body>
 </html>

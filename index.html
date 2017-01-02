@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="theme-color" content="#00796b">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
     <script src="jquery-3.1.1.min.js"></script>
 
-
     <link rel="stylesheet" href="style.css"/>
+
     <title>NatashaClubKissSender</title>
 </head>
 <body>
@@ -24,18 +26,20 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s6 m12 l6">
+        <div class="col s12 m6 l6">
             <div class="card" id="one">
                 <div class="card-content">
                     <span class="card-title title contcen">Быстрая</span>
-                    <p><ul class="grey-text text-darken-1">
-                    <li>Несколько секунд и весь дневной максимум Kiss отправлен</li>
-                    <li>Рассылает сразу по нескольким анкетам</li>
-                </ul></p>
+                    <p>
+                        <ul class="grey-text text-darken-1">
+                            <li>Несколько секунд и весь дневной максимум Kiss отправлен</li>
+                            <li>Рассылает сразу по нескольким анкетам</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="col s6 m12 l6">
+        <div class="col s12 m6 l6">
             <div class="card" id="two">
                 <div class="card-content">
                     <span class="card-title title contcen">Умная</span>
@@ -52,59 +56,30 @@
                 <div class="card-content contcen">
                     <span class="card-title title">Осталось до релиза v1.0 </span>
                     <p><h4 id="countdown" class="title"></h4></p>
-                    <div class="progress deep-purple lighten-3">
-                        <div class="determinate deep-purple darken-4" id="progress-bar"></div>
+                    <div class="progress teal lighten-4">
+                        <div class="determinate teal darken-1" id="progress-bar"></div>
                     </div>
                 </div>
                 <div class="card-action button-right">
+                    <div>
                     <a class="waves-effect waves-light btn amber accent-4" href="#modal2">Что нового</a>
+                    </div>
+                    <div>
                     <a class="waves-effect waves-light btn amber accent-4" href="#modal1">Ранний доступ</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-    <!--<div class="element " id="first-left">
-        <div id="first-content" class="slider-content">
-            <h4>Быстрая</h4>
-                <ul>
-                    <li>Несколько секунд и весь дневной максимум Kiss отправлен</li>
-                    <li>Рассылает сразу по нескольким анкетам</li>
-                </ul>
-
-        </div>
-    </div>
-
-    <div class="element  element-shadow" id="second-right">
-        <div id="second-content" class="slider-content">
-            <h4>Умная</h4>
-                <ul>
-                    <li>Не отправляет каждый раз одним и тем же мужчинам Kiss</li>
-                    <li>Не нужно каждый раз вводить логин и пароль</li>
-                    <li>Выбор онлайн статуса и региона</li>
-                </ul>
-        </div>
-    </div>
-
-    <div id="up" class="main-el amber lighten-3">
-        <div class="up-content" id="up-fade-in">
-            <h4>Осталось до релиза v1.0 </h4>
-            <h4 id="countdown"></h4>
-            <div style="text-align: right; padding-right: 2em">
-                <a class="waves-effect waves-light btn deep-purple accent-4" href="#modal2">Что нового</a>
-                <a class="waves-effect waves-light btn deep-purple accent-4" href="#modal1">Ранний доступ</a>
-            </div>
-        </div>
-    </div>-->
-
 <!-- Modal Structure -->
-<div id="modal1" class="modal bottom-sheet deep-purple darken-3">
+<div id="modal1" class="modal bottom-sheet cyan darken-2">
     <div class="modal-content altex">
         <h4 class="white-text">Доступна v0.1.4-SNAPSHOT</h4>
         <p class="grey-text text-lighten-4">Осторожно, может не правильно работать</p>
     </div>
-    <div class="modal-footer  deep-purple darken-3">
+    <div class="modal-footer  cyan darken-2">
         <a href="https://drive.google.com/open?id=1FSGZvwcbY3-_Kx6sexNtg3y-6ZN7_b8brHgv32Zrv98" class=" modal-action modal-close waves-effect waves-light btn-flat grey-text text-lighten-4">Инструкции</a>
         <a href="https://drive.google.com/open?id=0B4W161tfMM4NX3BhODhNVTlJVUU" class=" modal-action modal-close waves-effect waves-light btn-flat grey-text text-lighten-4">Скачать</a>
     </div>
@@ -113,19 +88,19 @@
 <!-- Modal Structure -->
 <div id="modal2" class="modal">
     <div class="modal-content">
-        <h4>Что будет в v1.0</h4>
+        <h4 class="title">Что будет в v1.0</h4>
         <p>
-            <ul>
-        <li>Полностью изменена архитектура</li>
-        <li>Отправка по регионам</li>
-        <li>Быстрый вход на анкету</li>
-        <li>Исправление множества ошибок</li>
-        <li>Новый интерфейс</li>
-    </ul>
+            <ol class="grey-text text-darken-1">
+                <li>Полностью изменена архитектура</li>
+                <li>Отправка по регионам</li>
+                <li>Быстрый вход на анкету</li>
+                <li>Исправление множества ошибок</li>
+                <li>Новый интерфейс</li>
+            </ol>
         </p>
     </div>
     <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-purple btn-flat">Супер!</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-teal btn-flat">Супер!</a>
     </div>
 </div>
 

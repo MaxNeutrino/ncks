@@ -147,6 +147,18 @@ ol {
     display: inline-block;
 }
 
+footer {
+    /*width:100%;*/
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+}
+
+footer a {
+    color: #009688;
+}
+
 @media screen and (max-width: 600px) {
     .card-action div {
         display: inline-block;

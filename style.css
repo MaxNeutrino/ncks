@@ -1,7 +1,13 @@
+
+
 body {
     font-family: 'Roboto', sans-serif;
 /*    background-color: #180039;*/
-    background: linear-gradient(to top right, #0097A7, #00695C);
+    background-image: url("banner.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100%;
     margin: 0;
     padding: 0;
